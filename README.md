@@ -6,4 +6,5 @@ https://www.youtube.com/watch?v=z02eWC4IVSc
 
 ## Kódok
 
-1-2 rész transition és animation https://github.com/rrd108/css-animations
+- 1-2 rész transition és animation https://github.com/rrd108/css-animations
+- Line Reveal Text Effect https://github.com/rrd108/css-animations/tree/lineRevealText
