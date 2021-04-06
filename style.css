@@ -1,49 +1,54 @@
 body {
-  background: #272727;
-  color: #eff1f3;
   font-family: 'Quicksand', sans-serif;
+  background-color: #693668;
+  color: #fff;
+  height: 70vh;
+  font-size: 1.4rem;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
+section {
+  position: absolute;
+  top: 40vh;
+  overflow: hidden;
+  max-width: 85vw;
+  animation: growFromLeft 1.7s ease 1s forwards;
+  width: 0vw;
 }
 
-#menu-icon {
-  background-color: #fed766;
-  color: #272727;
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 50%;
+@keyframes growFromLeft {
+  100% {
+    width: 100vw;
+  }
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  transform: translate(-60rem, -5rem);
-  transition: transform 350ms ease-in-out;
+hr {
+  border: 1px solid #fff;
+  margin: 0;
 }
 
-ul.active {
-  transform: translate(2.5rem, -5rem);
-  width: 33rem;
+p {
+  margin: 0 0 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-li {
-  margin: .5rem;
+span {
+  display: inline-block;
+  animation: reveal 500ms ease 2s forwards;
 }
 
-a {
-  text-decoration: none;
-  background-color: #fed766;
-  color: #272727;
-  font-weight: 700;
-  padding: .5rem 1rem;
-  transition: background-color 300ms ease-in, color 500ms ease-out;
+#p1 span {
+  transform: translateY(2rem);
+  transform-origin: bottom;
 }
 
-a:hover {
-  background-color: #009fb7;
-  color: #eff1f3;
+#p2 span{
+  transform: translateY(-2rem);
+  transform-origin: top;
+}
+
+@keyframes reveal {
+  100% {
+    transform: translateY(0);
+  }
 }
